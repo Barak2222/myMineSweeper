@@ -87,7 +87,7 @@ var gameBoard={
 		var neighborsArr = [];
 		for(var row=y-1;row<=y+1;row++){
 			for(var col=x-1;col<=x+1;col++){
-				if(row>=0 && row <gameBoard.height && col>=0 &&col<gameBoard.width && !(row==y && col==x)){
+				if(row>=0 && row <gameBoard.height && col>=0 &&col<gameBoard.width && !(row==y && col==x)){ //{TODO} better if
 					neighborsArr[neighborsArr.length] = new Array();
 					neighborsArr[neighborsArr.length-1] = [col,row];
 				}
